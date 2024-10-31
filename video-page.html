@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Video Training</title>
+</head>
+<body>
+  <!-- Video Section -->
+  <div class="video-section" id="videoContainer">
+    <video id="trainingVideo" unmuted>
+      <source src="w50.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <!-- Control Buttons -->
+    <div class="control-buttons" id="controlButtons">
+      <button onclick="startVideo()">Start</button>
+      <button onclick="pauseVideo()">Pause</button>
+    </div>
+    <!-- Time Display -->
+    <p class="time-display" id="timeDisplay"><span id="seconds">00:00</span></p>
+    <!-- Submit Button (initially hidden) -->
+    <button id="submitButton" class="submit-button" onclick="nextPage()">Submit</button>
+  </div>
+  <!-- Bottom Instruction Text -->
+  <footer class="bottom-text">
+    <strong>Avoid phone calls and messages for the next 32 minutes.<br>
+      அடுத்த 32 நிமிடங்களுக்கு தொலைபேசி அழைப்புகள் மற்றும் செய்திகளை தவிர்க்கவும்.
+    </strong>
+  </footer>
+</body>
+</html>
